@@ -6,6 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agenda</title>
+    <style>
+    table, th, tr {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 3px;
+    }
+    th {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+    </style>
 </head>
 
 <body>
@@ -13,16 +24,46 @@
         <h1>Agenda</h1>
     </header>
     <section>
+        <h3>Mon emploi du temps cette semaine:</h3>
         <table>
             <tr>
-                <td>Horaire</td>
-                <td>Lundi</td>
-                <td>Mardi</td>
-                <td>Mercredi</td>
-                <td>Jeudi</td>
-                <td>Vendredi</td>
-                <td>Samedi</td>
-                <td>Dimanche</td>
+                <th>Horaire</th>
+                <th>Lundi</th>
+                <th>Mardi</th>
+                <th>Mercredi</th>
+                <th>Jeudi</th>
+                <th>Vendredi</th>
+            </tr>
+            <tr>
+                <th>8h-10h</th>
+                <th>Anglais</th>
+                <th></th>
+                <th>Base de donnees</th>
+                <th rowspan="2">Technologies du Web</th>
+                <th rowspan="2">Programmation</th>
+            </tr>
+            <tr>
+                <th>10h-12h</th>
+                <th>Réseaux</th>
+                <th><a href="./../matieres/matieres.html#algorithmique">Algorithmique</a></th>
+                <th>Génie logicielle</th>
+            </tr>
+            <tr>
+                <th>12h-13h</th>
+                <th colspan="5">Pause midi</th>
+            </tr>
+            <tr>
+                <th>13h-15h</th>
+                <th rowspan="2">Langage machine</th>
+                <th rowspan="2">Programmation</th>
+                <th>Systèmes</th>
+                <th rowspan="2">Sport</th>
+                <th>Arabe</th>
+            </tr>
+            <tr>
+                <th>15h-17h</th>
+                <th>Systèmes</th>
+                <th></th>
             </tr>
         </table>
     </section>
