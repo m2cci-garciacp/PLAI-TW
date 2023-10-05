@@ -1,0 +1,100 @@
+
+body {
+    background-color: rgb(255, 185, 80);
+    margin:0;
+}
+header {
+    margin:1em;
+    padding: 1em;
+    border: 2px solid black;
+}
+header>h1 {
+    float:left;
+}
+
+header>div {
+    vertical-align: middle;
+    float: right;
+}
+header>div>div {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: rgb(248, 186, 92);
+    transition: all .2s ease-in-out;
+}
+header>div>div:hover {
+    background-color: rgb(248, 172, 57);
+    transform: scale(1.1);
+}
+.werehere {
+    background-color: rgb(248, 172, 57);
+}
+body>div{
+    padding: 1em 3em 3em 3em;
+    margin:1em;
+    background-color: rgb(241, 180, 139);
+    border: 1px solid brown;
+    border-radius: 5px;
+}
+footer {
+    background: chocolate;
+    border-top: 2px solid black;
+    padding:7px;
+}
+footer a {
+    margin: 2em;    
+}
+footer>div {  
+    border: 2px solid brown;
+    border-radius: 5px;
+    padding: 13px;
+    text-align: center;
+}
+.boxed {
+    border: 3px solid black;
+    align-items: center;
+}
+.boxed>img {
+    margin:2em;
+}
+.boxed>div {
+    margin:2em;
+}
+.sidebyside {
+    display: inline-block;
+    align-content: center;
+    vertical-align: middle;
+}
+nav {
+    z-index: 2;
+    display:block;
+    position: fixed;
+    min-height: 1px;
+    right: 3%;
+    padding: 5px;
+    background-color: rgb(250, 221, 186);
+    border: 2px solid  rgb(247, 189, 118);
+    border-radius: 6px;
+}
+nav>a {
+    z-index: 2;
+    display: block;
+    margin: 0.5em;
+    font-size: medium;
+    width: 11em;
+}
+nav>a:hover {
+    z-index: 3;
+    display:block;
+    font-weight: bold;
+}
+a {
+    color: black;
+    cursor: pointer;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
