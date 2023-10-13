@@ -1,0 +1,48 @@
+article {
+    background: #ffe4c4;
+    border-radius: 5px;
+    padding:10px;
+}
+section {
+    background-color: #e6e6fa;
+    border-radius: 5px;
+    padding:10px;
+}
+div.col-md-3 {
+    text-align: justify;
+}
+div.col-md-6 {
+    text-align: justify;
+}
+div.col-md-4 {
+    text-align: justify;
+}
+h2 div.row div.col-4 {
+    text-align: left;
+}
+header {
+    background: #343a40;
+    padding-left: 3rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+header div.col-md-1 {
+    padding: 0.3rem 0 0.3rem 0;
+    color: #8F9591;
+}
+header .col-md-1:hover {
+    background: #474747;
+}
+header .col-md-1:hover a {
+    color: white !important;
+}
+header .col-md-1 a {
+    text-decoration: none;
+}
+header .col-md-1 a:link {
+    text-decoration: none;
+}
+header .col-md-1 a:visited {
+    color: #8F9591;
+    text-decoration: none;
+}
