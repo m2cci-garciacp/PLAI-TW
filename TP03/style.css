@@ -34,17 +34,11 @@ nav .nav-item {
 nav .nav-item:hover {
     background: #474747;
 }
-nav .nav-item:hover a {
+nav .nav-item:hover>a {
     color: white !important;
 }
-/*
-nav .col-md-1 a {
-    text-decoration: none;
+nav .nav-item .dropdown-menu a:hover{
+    color: black !important;
+    background: #dfdfdf;
+    border-radius: 5px;
 }
-nav .col-md-1 a:link {
-    text-decoration: none;
-}
-nav .col-md-1 a:visited {
-    color: #8F9591;
-    text-decoration: none;
-}*/
