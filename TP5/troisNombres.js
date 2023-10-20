@@ -1,18 +1,19 @@
 const readline = require('readline-sync');
 
-let val1 = readline.question("Value 1: ");
-let val2 = readline.question("Value 2: ");
-let val3 = readline.question("Value 3: ");
-
 /**
- * change 2 values
+ * Order 2 values
  * @param {number} a first number
  * @param {number} b second number
- * @returns tableau of [b, a]]
+ * @returns tableau of the ordered values
  */
-function change2Values (a,b)
+function order2Values (a, b)
 {
-    return [b, a]
+    if (a>b) {
+        return [a, b];
+    } else {
+        return [b, a];
+    }
+    
 }
 
 /**
@@ -24,15 +25,21 @@ function change2Values (a,b)
  */
 function order3Values (a, b, c)
 {
-    if (a>b) {
-        [a,b]=change2Values(a,b);
-    }
-    if (c>b) {
-        [c,b]=change2Values(c,b);
-    }
-    if (b>a) {
-        [a,b]=change2Values(a,b);
-    }
+    [a, b] = order2Values(a, b);
+    console.log(a, b);
+    [b, c] = order2Values(b, c); 
+    console.log(a, b, c);
+    [a, b] = order2Values(a, b);
 
-    return [a, b]
+    return [a, b, c]
 }
+
+
+
+let val1 = readline.question("Value 1: ");
+let val2 = readline.question("Value 2: ");
+let val3 = readline.question("Value 3: ");
+
+[val1, val2, val3] = order3Values (val1, val2, val3);
+
+console.log(val1, val2, val3);
