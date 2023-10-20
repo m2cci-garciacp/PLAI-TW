@@ -1,4 +1,5 @@
 const readline = require('readline-sync');
+const utils=require("./utils.js");
 
 
 function temperatureConversion() {
@@ -23,8 +24,4 @@ function encore () {
 }
 
 
-
-import {loopFunction} from "./utils.js";
-
-
-loopFunction(temperatureConversion, []);
+utils.loopFunction(temperatureConversion, []);
