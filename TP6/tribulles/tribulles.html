@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Tri à bulles !</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <script src="./js/triBulles.js"></script>
+        <script src="./js/tabUtils.js"></script>
+        <style>
+            body {
+                text-align: center;
+                font-family: Verdana, Geneva, sans-serif;
+            }
+            .mess {
+                font-size: 80%;
+                font-style: italic;
+            }
+            #wrapper {
+                width: 600px;
+                background-color: #e3ebf4;
+                margin: auto;
+            }
+            .echange1{
+                background-color: green;
+            }
+            .echange2{
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <h1>Trace d'exécution d'un tri à bulle</h1>
+            <script>
+                let tab1 = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+                melanger(tab1);
+                afficher('Tableau à trier', tab1);
+            </script>
+            <p>
+                Dans ce qui suit, seront affichées pour chaque parcours du tableau 
+                (passage) les permutations effectuées entre deux éléments consécutifs.
+            </p>
+            <script>
+                trier(tab1);
+            </script>
+        </div>
+
+    </body>
+</html>
