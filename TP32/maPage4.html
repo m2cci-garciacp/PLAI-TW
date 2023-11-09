@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page 4</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+        <div class="container-fluid">
+            <!--Logo-->
+            <a class="navbar-brand" href="maPage3.html">
+                <img src="images/logo.png" alt="Logo UGA" style="width:40px;" class="rounded-pill">
+            </a>
+            <!--Burger menu in small screen-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Menu-->
+            <div id="collapsibleNavbar" class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <!--Drop-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="maPage3.html" role="button"
+                            data-bs-toggle="dropdown">Page 3</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#articles">Articles</a></li>
+                            <li><a class="dropdown-item" href="#sections">Sections</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./maPage4.html">Page 4</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <div class="container">
+        <h1>Ma 4ème page boostrap</h1>
+        <p>
+            Exemple d'utilisation de bootsrap pour la mise en forme d'un tableau
+        </p>
+        <div class="table-responsive"><!--circled-->
+            <table class="table text-center table-bordered table-hover"><!--text-center: center text in table; bordered borders hover: hover on cell-->
+                <thead class="table-primary"><!--color on row-->
+                    <tr>
+                        <th scope="col">Année</th>
+                        <th scope="col">Moyenne annuelle</th>
+                        <th scope="col">Janvier</th>
+                        <th scope="col">Février</th>
+                        <th scope="col">Mars</th>
+                        <th scope="col">Avril</th>
+                        <th scope="col">Mai</th>
+                        <th scope="col">Juin</th>
+                        <th scope="col">Juillet</th>
+                        <th scope="col">Août</th>
+                        <th scope="col">Septembre</th>
+                        <th scope="col">Octobre</th>
+                        <th scope="col">Novembre</th>
+                        <th scope="col">Décembre</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2018</td>
+                        <td><strong>13,9</strong></td>
+                        <td>8,4</td>
+                        <td>3,5</td>
+                        <td>8,2</td>
+                        <td>13,8</td>
+                        <td>16,3</td>
+                        <td>20,1</td>
+                        <td>23,2</td>
+                        <td>22,3</td>
+                        <td>19,0</td>
+                        <td>14,4</td>
+                        <td>9,6</td>
+                        <td>7,7</td>
+                    </tr>
+                    <tr>
+                        <th colspan="14" class="table-info"><!--span des colonnes, color on row-->
+                            <small> ↓ Normales climatiques 1981-2010 (°C) ↓ </small>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>1981-2010</td>
+                        <td><strong>12,6</strong></td>
+                        <td>5,0</td>
+                        <td>5,7</td>
+                        <td>8,7</td>
+                        <td>11,1</td>
+                        <td>15,0</td>
+                        <td>18,3</td>
+                        <td>20,8</td>
+                        <td>20,6</td>
+                        <td>17,3</td>
+                        <td>13,5</td>
+                        <td>8,5</td>
+                        <td>5,6</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p>Évolution de la température moyenne en France (°C)<br>
+            <small>Source : <a href="http://meteofrance.fr">meteofrance.fr</a></small>
+        </p>
+        <br>
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore beatae, vitae est minima sapiente vero,
+            cumque possimus porro voluptas in debitis, ut saepe laudantium? Saepe quibusdam alias cumque ex eius
+            nobis vitae, doloribus veniam nam eos dolores similique quasi facere laudantium maxime distinctio porro
+        </p>
+    </div>
+</body>
+
+</html>
