@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre caché: trouvez-le!</title>
+    <script src="./js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Nombre caché</h1>
+        <h3>trouvez-le!</h3>
+    </header>
+    <div>
+        <div>
+            Trouvez le nombre cache (entre 0 et 100) avec 10 essais maximum.
+        </div>
+        <div>
+            <label for="quantity">Votre proposition :</label>
+            <input type="number" id="guess" min="0" max="100">
+            <input type="submit" id="submit_btn">
+        </div>
+        <div id="textBox">
+            
+        </div>
+        <div id="btns">
+            <button id="play">Jouer</button>
+            <button id="forfeit">Abandonner</button>
+        </div>
+    </div>
+</body>
+</html>
