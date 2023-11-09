@@ -1,0 +1,17 @@
+.round {
+    border-radius: 15px;
+    padding: 1em;
+    margin: 1em;
+}
+article{
+    background:#ffe4c4;
+}
+section{
+    background: #e6e6fa;
+}
+p {
+    text-align: justify;
+}
+.col-sm-4>p {
+    text-align: left;
+}

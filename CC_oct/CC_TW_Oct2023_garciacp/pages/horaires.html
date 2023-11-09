@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>CE XXX - Horaries</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="./../styles/styles.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-success navbar-dark sticky-top">
+        <div class="container">
+            <!--Logo-->
+            <a class="navbar-brand" href="maPage3.html">
+                <img src="./../images/logoCE.png" alt="Logo CE" style="width:40px;" class="rounded-pill">
+            </a>
+            <!--Burger menu in small screen-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Menu-->
+            <div id="collapsibleNavbar" class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./../index.html">Accueil</a>
+                    </li>
+                    <!--Drop-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="./installations.html" role="button"
+                            data-bs-toggle="dropdown">Installations</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./installations.html#manege">Manège</a></li>
+                            <li><a class="dropdown-item" href="./installations.html#carriere">Carrière</a></li>
+                            <li><a class="dropdown-item" href="./installations.html#boxes">Boxes</a></li>
+                            <li><a class="dropdown-item" href="./installations.html#camion">Camion</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./horaires.html">Horaires</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Horaires</h1>
+        <section>
+            <h2>Horaires du bureau</h2>
+            <ul>
+                <li>tel: 04.76.XX.XX.XX</li>
+                <li>courriel: cexxxx@mail.com</li>
+                <li>heures d'ouverture du bureau
+                    <ul>
+                        <li>Mardi au Vendredi: 10h-12h , 15h-18h</li>
+                        <li>Samedi: 8h30-12h, 14h-18h</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Horaires des cours</h2>
+            <div class="table-responsive-lg">
+                <table class="table table-striped table-bordered">
+                    <thead class="table-dark text-center align-middle">
+                        <tr>
+                            <th rowspan="2">Activités</th>
+                            <th colspan="3">Niveau</th>
+                        </tr>
+                        <tr>
+                            <th>Débutant</th>
+                            <th>Intermédiaire</th>
+                            <th>Confirmé</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="text-center">
+                                <p>CSO</p>
+                                <img src="../images/jumping.png" alt="jumping">
+                            </th>
+                            <th>
+                                <ul>
+                                    <li>lundi: 17h30-18hH30</li>
+                                    <li>mercredi: 15h-16h</li>
+                                    <li>samedi: 14h-15h</li>
+                                </ul>
+                            </th>
+                            <th>
+                                <ul>
+                                    <li>lundi: 17h30-18hH30</li>
+                                    <li>mercredi: 17h-18h</li>
+                                    <li>samedi: 15h-16h</li>
+                                </ul>
+                            </th>
+                            <th>
+                                <ul>
+                                    <li>lundi: 18h30-19hH30</li>
+                                    <li>mercredi: 18h-19h</li>
+                                    <li>samedi: 17h-18h</li>
+                                </ul>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="text-center">
+                                <p>Dressage</p>
+                                <img src="../images/dressage.png" alt="dressage">
+                            </th>
+                            <th>
+                                <ul>
+                                    <li>mardi: 16h-17h</li>
+                                    <li>jeudi: 17h30-18h30</li>
+                                </ul>
+                            </th>
+                            <th>
+                                <ul>
+                                    <li>mardi:17h30-18hH30</li>
+                                    <li>jeudi: 16h-18h</li>
+                                    <li>samedi: 10h-11h</li>
+                                </ul>
+                            </th>
+                            <th>
+                                <ul>
+                                    <li>mardi: 18h30-19hH30</li>
+                                    <li>jeudi: 18h30-19hH30</li>
+                                    <li>samedi: 11h30-12h</li>
+                                </ul>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="text-center">
+                                <p>Pony-games</p>
+                                <img src="../images/ponygames.png" alt="ponygames">
+                            </th>
+                            <th>
+                            </th>
+                            <th>
+                            </th>
+                            <th>
+                                <ul>
+                                    <li>samedi: 15h-17h</li>
+                                </ul>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

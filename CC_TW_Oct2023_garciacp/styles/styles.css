@@ -1,0 +1,22 @@
+table, th, td {
+    border: 1px solid black;
+}
+body {
+  background: #f0f0f0;
+}
+section {
+  background: #e3e0cc;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 10px;
+}
+h2 {
+  background: #9fa9a3;
+  color: white;
+  padding: 10px;
+}
+article {  
+  padding: 10px;
+  margin-top: 5px;
+  background: #c5d5c5;
+}
