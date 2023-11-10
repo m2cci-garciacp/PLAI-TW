@@ -1,0 +1,36 @@
+body {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+}
+body>div {
+    width: 600px;
+    padding: 2em;
+    border: 2px solid black;
+}
+header>h1 {
+    margin-top: 0;
+}
+#textBox {
+    height: 3em;
+}
+.hidden {
+    display: none;
+}
+.success {
+    color: greenyellow;
+}
+.failure {
+    color: red;
+}
+.hot {
+    color: orange;
+}
+.cold {
+    color: rgb(0, 140, 255);
+}
+.normal {
+    color: black;
+}
