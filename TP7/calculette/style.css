@@ -1,3 +1,54 @@
-div {
-    border: 1px solid black;
+body {
+    display: flex;
+    justify-content: center;
+    margin: 3em auto;
+    font-family: sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 75px 75px 75px 75px;
+    padding: 2em;
+    border-radius: 8px;
+    border: 5px solid rgb(182, 171, 134);
+    gap: 10px;
+    background-color: #c2beb0;
+}
+.grid-container>div {
+    background-color: grey;
+    color :white;
+    border: 3px solid rgb(105, 105, 102);
+    padding: 10px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.grid-container>div:hover {
+    cursor: pointer;
+}
+div#screen {
+    color: black;
+    font: "Andale Mono", monospace;
+    justify-content: flex-end;
+}
+div#screen:hover {
+    cursor:default;
+} 
+.double-row {
+    grid-row: 5/7;
+    grid-column: 4;
+}
+.double-col {
+    grid-column: 1/3;
+    grid-row: 6;
+}
+.all-col {
+    grid-column: 1/5;
+    grid-row: 1;
+}
+
+#C {
+    background: red;
 }
