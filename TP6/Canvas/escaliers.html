@@ -15,8 +15,16 @@
     <div>
         <header>
             <h1>THIS IS MY CANVAS</h1>
-            <p>hauteur de marche en px : <input type="integer" id="height" name="height" value="0" size="3" /></p>
-            <p>nb de marches : <input type="integer" id="stages" name="stages" value="0" size="3" /></p>
+            <p>hauteur de marche en px : <input type="integer" id="height" name="height" value="0" size="3" /> nb de marches : <input type="integer" id="stages" name="stages" value="0" size="3" /></p>
+            <p>Couleur du trait <input type="color" id="colorline" name="colorline" /> Couleur fill <input type="color" id="colorfill" name="colorfill" /></p>
+            <p><form>
+                  <label for="left">Escalier left</label><br>
+                  <input type="radio" id="left" name="type" value="left">
+                  <label for="center">Escalier centre</label><br>
+                  <input type="radio" id="center" name="type" value="left">
+                  <label for="right">Escalier droit</label><br>
+                  <input type="radio" id="right" name="type" value="left">
+                </form> </p>
             <p>
                 <button id="effacer_btn">Effacer</button>
                 <button id="dessiner_btn">Dessiner</button>
@@ -26,8 +34,7 @@
             </p>
         </header>
         <div id="canvas">
-            <canvas id="canvasEscaliers" width="500" height="500" style="border:1px solid #000000;"></canvas>
-            <canvas id="canvasFleurs" width="500" height="500" style="border:1px solid #000000;"></canvas>
+            <canvas id="canvasEscaliers" width="800" height="800" style="border:1px solid #000000;"></canvas>
 
         </div>
     </div>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escaliers</title>
+    <link href="css/escaliers.css" rel="stylesheet" type="text/css" />
+    <script src="js/escaliers.js" defer></script>
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1>THIS IS MY CANVAS</h1>
+            <p>hauteur de marche en px : <input type="integer" id="height" name="height" value="0" size="3" /> nb de
+                marches : <input type="integer" id="stages" name="stages" value="0" size="3" /></p>
+            <p>Color line <input type="color" id="colorLine" name="colorLine" /> Color fill: <input type="color"
+                id="colorFill" name="colorFill" /> Color BKG: <input type="color"
+                id="colorBkg" name="colorBkg" /> </p>
+            <p id="coords">(&nbsp;&nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;&nbsp;&nbsp;)</p>
+            
+            <form>
+                  <label for="left">Escalier gauche</label>
+                  <input type="radio" id="left" name="type" value="LEFT">&nbsp;
+                  <label for="center">Escalier centre</label>
+                  <input type="radio" id="center" name="type" value="CENTER" selected >&nbsp;
+                  <label for="right">Escalier droit</label>
+                  <input type="radio" id="right" name="type" value="RIGHT">
+            </form>
+            <p>
+                <button id="effacer_btn">Effacer</button>
+                <button id="dessiner_btn">Dessiner</button>
+            </p>
+        </header>
+        <div id="canvas">
+            <canvas id="canvasEscaliers" width="800" height="800" style="border:1px solid #000000;"></canvas>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
