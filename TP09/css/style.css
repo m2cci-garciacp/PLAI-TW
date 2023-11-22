@@ -1,0 +1,16 @@
+body>div {
+    width: 600;
+    border: 2px black solid;
+    text-align: center;
+    margin: 2em 5em 2em 5em;    
+}
+body {
+    padding: auto;
+}
+header {
+    margin: 2em;    
+}
+#canvas {
+    margin: 1em;
+    background-color: greenyellow ;
+}
