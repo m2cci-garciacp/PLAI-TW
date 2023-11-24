@@ -7,9 +7,23 @@ const TIME_CONST = 100 ;
 function createFaces() {
     removeFaces() ;
     let nFaces = document.getElementById("nbFaces").value ;
-    for (let i=0; i<nFaces; i++) {
-        faces.push( createRandomFace() );
-    }
+    // for (let i=0; i<nFaces; i++) {
+    //     faces.push( createRandomFace() );
+    // }
+    faces.push( createRandomFaceE() );
+    faces.push( createRandomFace() );
+}
+function createRandomFaceE() {
+    let r = Math.random() * (R_MAX+1);
+    let cx = R_MAX + Math.random() * (canvas.width-2*R_MAX);
+    let cy = R_MAX + Math.random() * (canvas.height-2*R_MAX);
+    let vx = V_MIN + Math.random() * (V_MAX-V_MIN);
+    let vy = V_MIN + Math.random() * (V_MAX-V_MIN);
+    let colorLine = document.getElementById("colorLine").value;
+    let colorFill = document.getElementById("colorFill").value;
+    console.log(`vx=${vx}  vy=${vy}`);
+    let face = new FaceExpressif(canvas, cx, cy, r, vx, vy, style={fillStyle: colorFill, lineStyle: colorLine}, Math.random() * 3);
+    return face ;
 }
 function createRandomFace() {
     let r = Math.random() * (R_MAX+1);
@@ -19,7 +33,7 @@ function createRandomFace() {
     let vy = V_MIN + Math.random() * (V_MAX-V_MIN);
     let colorLine = document.getElementById("colorLine").value;
     let colorFill = document.getElementById("colorFill").value;
-    let face = new Face(canvas, cx, cy, r, vx, vy, style={fillStyle: colorFill, lineStyle: colorLine}, Math.random() * 3);
+    let face = new Face(canvas, cx, cy, r, vx, vy, style={fillStyle: colorFill, lineStyle: colorLine});
     return face ;
 }
 
@@ -42,6 +56,7 @@ function moveFaces() {
     for (let face of faces) {
         face.deplacer() ;
     }
+    console.log("apres deplacement : ", faces);
     // redraw: on peut pas les joindre parce que le draw inclu un effaçage decran
     for (let face of faces) {
         face.draw() ;
