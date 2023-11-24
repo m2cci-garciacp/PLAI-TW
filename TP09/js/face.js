@@ -180,7 +180,6 @@ class FaceExpressif extends Face {
         this.mouth.draw();
     }
     deplacer() {
-        console.log(this.cx, this.vx, this.cy, this.vy);
         this.cx = this.cx + this.vx;
         this.cy = this.cy + this.vy;
         effacer(canvas);
@@ -199,22 +198,3 @@ class FaceExpressif extends Face {
     }
 }
 
-/*
-class R {
-    constructor (nom) {
-        this.nom = nom ;
-    }
-    name() {
-        console.log(`my name is ${this.nom}.`);
-    }
-}
-
-class S extends R {
-    constructor (nom, age) {
-        super(nom);
-        this.age=age;
-    }
-    name() {
-        console.log(`my name is ${this.nom} with ${this.age} yo.`);
-    }
-}*/
