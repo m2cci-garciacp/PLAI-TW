@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestVisageExpressif</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- les boutons pour lancer et interrompre l'animation -->
+    <div class="controlPanel">
+        <button id="startBtn">Start</button>
+        <button id="stopBtn" disabled>Stop</button>
+    </div>
+    <div class="wrapper">
+        <canvas id="zoneDessin" width="500" height="500">
+            la zone de dessin, si ce message s'affiche c'est que votre navigateur ne
+            supporte pas la balise canvas de HTML5... il serait temps de changer de
+            version !
+        </canvas>
+    </div>
+    <script src="js/Visage.js"></script>
+    <script src="js/VisageExpressif.js"></script>
+    <script src="js/testVisageExpressif.js"></script>
+</body>
+
+</html>

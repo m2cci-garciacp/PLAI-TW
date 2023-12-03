@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+  une application simple d'animation utilisant l'API JavaScript canvas de HTML5.
+-->
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visages Animés</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div id="wrapper">
+    <h1>Les visages rebondissants</h1>
+    <!-- l'input permettant de contrôler la couleur des visages -->
+    <p>
+      <label>Couleur des Visages:</label>
+      <input type="color" id="visagesColor" value="#ffe4c4">
+    </p>
+    <!-- l'input et le bouton permettant de contrôler le nombre de visages -->
+    <p>
+      <label>Nombre de Visages: </label>
+      <input type="number" id="nbreVisages" min="1" max="20" value="2">
+      <button id="generateVisagesBtn">Générer</button>
+    </p>
+    <!-- les boutons pour lancer et interrompre l'animation -->
+    <div class="controlPanel">
+      <button id="startBtn">Start</button>
+      <button id="stopBtn" disabled>Stop</button>
+    </div>
+    <!-- le canvas pour dessiner -->
+    <canvas id="zoneDessin" width="900" height="500">
+      la zone de dessin, si ce message s'affiche c'est que votre navigateur ne
+      supporte pas la balise canvas de HTML5... il serait temps de changer de
+      version !
+    </canvas>
+    <script src="js/Visage.js"></script>
+    <script src="js/VisageExpressif.js"></script>
+    <script src="js/lesVisages.js" type="text/javascript"></script>
+  </div>
+</body>
+
+</html>

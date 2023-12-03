@@ -1,0 +1,42 @@
+
+.chiffresHorloge {
+    font-family: "Lucida Console", Courier, monospace;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    padding: 5px;
+}
+
+.horloge {
+    background-color: lightgrey;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.horloge > p {
+    text-align: center;
+}
+
+#credits, figcaption {
+    font-size: 0.8em;
+    text-align: center;
+}
+
+figure {
+    text-align: center;
+}
+
+section {
+    text-align: justify;
+}
+
+.container-fluid small {
+    font-size: 0.8rem;
+}
+
+
+body {
+    margin-top: 80px;
+}

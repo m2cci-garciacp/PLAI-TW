@@ -1,0 +1,22 @@
+body {
+  text-align: center;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+canvas {
+  border: 1px solid;
+  background-color: greenyellow;
+}
+
+#wrapper {
+  width: 1000px;
+  margin: auto;
+}
+
+.controlPanel {
+  margin-bottom: 10px;
+}
+
+input[type="number"] {
+  width: 50px;
+}
