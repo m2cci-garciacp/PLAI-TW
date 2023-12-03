@@ -1,0 +1,23 @@
+body {
+    background-color: #f0f0f0;
+}
+
+section {
+    background-color: #e3e0cc;
+    margin-top: 10px;
+}
+
+h2 {
+    background-color: #9fa9a3;
+    color: white;
+}
+
+article {
+    margin-top: 5px;
+    background-color: #c5d5c5;
+}
+
+article, section, h2 {
+    padding : 10px;
+    border-radius: 10px;
+}
