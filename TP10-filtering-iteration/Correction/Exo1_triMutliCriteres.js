@@ -1,4 +1,4 @@
-const Personne = require("./Personne.js"); // pour utiliser la classe Personne
+const Personne = require("./Personne.js");
 const readline = require("readline-sync"); // pour utiliser le module readline-sync
 
 let tabPersonnes = [
@@ -32,45 +32,28 @@ do {
 			break;
 		case 1:
 			console.log("\nTri par age");
-			console.table(tabPersonnes.slice().sort((a, b) => a.age - b.age));
+			console.table(tabPersonnes.slice().sort((p1, p2) => p1.age - p2.age));
 			break;
 		case 2:
 			console.log("\nTri par nom");
-			console.table(tabPersonnes.slice().sort((a, b) => {
-				if (a.nom === b.nom) { return 0; }
-				else if (a.nom < b.nom) { return -1; }
-				else { return 1; };
-			}));
+			console.table(tabPersonnes.slice().sort((p1, p2) => p1.nom.localeCompare(p2.nom)));
 			break;
 		case 3:
 			console.log("\nTri par prénom");
-			console.table(tabPersonnes.slice().sort((a, b) => {
-				if (a.prenom === b.prenom) { return 0; }
-				else if (a.prenom < b.prenom) { return -1; }
-				else { return 1; };
-			}));
+			console.table(tabPersonnes.slice().sort((p1, p2) => p1.prenom.localeCompare(p2.prenom)));
 			break;
 		case 4:
 			console.log("\nTri par Age, Nom et Prénom");
-			console.table(tabPersonnes.slice().sort((a, b) => {
-				if (a.prenom === b.prenom) { return 0; }
-				else if (a.prenom < b.prenom) { return -1; }
-				else { return 1; };
-			})
-				.sort((a, b) => {
-					if (a.nom === b.nom) { return 0; }
-					else if (a.nom < b.nom) { return -1; }
-					else { return 1; };
-				}).sort((a, b) => a.age - b.age)
-			);
+			console.table(tabPersonnes.slice().sort((p1, p2) => p1.age - p2.age || p1.nom.localeCompare(p2.nom) || p1.prenom.localeCompare(p2.prenom) ));
 			break;
-		case 5 :
-			console.log("case 5");
+		case 5:
+			console.log("\nTableau initial non trié");
 			console.table(tabPersonnes);
 			break;
 		default:
 			console.log("choix incorrect, recommencez");
 			break;
 	}
-} while (reponse !== 0);
+} while (reponse !== 0) ;
+
 
